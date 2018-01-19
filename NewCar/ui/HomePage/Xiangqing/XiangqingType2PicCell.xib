@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="XiangqingType2PicCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wy4-rr-Vq0">
+                        <rect key="frame" x="0.0" y="5" width="320" height="210"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wy4-rr-Vq0" secondAttribute="trailing" id="F7k-25-Jqa"/>
+                    <constraint firstAttribute="bottom" secondItem="wy4-rr-Vq0" secondAttribute="bottom" constant="4" id="G18-V2-FKe"/>
+                    <constraint firstItem="wy4-rr-Vq0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="J5r-sa-RKu"/>
+                    <constraint firstItem="wy4-rr-Vq0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sPs-P9-NUm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="picImageView" destination="wy4-rr-Vq0" id="PGZ-0T-LXC"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

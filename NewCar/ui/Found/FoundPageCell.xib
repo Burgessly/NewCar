@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FoundPageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Atu-jD-6wI">
+                        <rect key="frame" x="0.0" y="5" width="320" height="150"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail_top_ shadow_iamge.png" translatesAutoresizingMaskIntoConstraints="NO" id="w5u-Ti-DXH">
+                        <rect key="frame" x="0.0" y="6" width="320" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="GBh-2l-KOX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更多 &gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zy8-8G-gFm">
+                        <rect key="frame" x="270" y="15" width="55" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="GzA-CO-Sib"/>
+                            <constraint firstAttribute="width" constant="55" id="Ob3-AJ-BrY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJj-Bb-bPf">
+                        <rect key="frame" x="8" y="15" width="101" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="gxX-fa-zIA"/>
+                            <constraint firstAttribute="width" constant="101" id="v8Q-lT-A6f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Atu-jD-6wI" secondAttribute="trailing" id="DS0-sU-zCN"/>
+                    <constraint firstAttribute="trailing" secondItem="zy8-8G-gFm" secondAttribute="trailing" constant="-5" id="NtL-Q9-Vbj"/>
+                    <constraint firstAttribute="trailing" secondItem="w5u-Ti-DXH" secondAttribute="trailing" id="UiL-w4-lWB"/>
+                    <constraint firstItem="w5u-Ti-DXH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="W5j-fG-KFI"/>
+                    <constraint firstItem="hJj-Bb-bPf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="YUI-Mm-NPc"/>
+                    <constraint firstItem="Atu-jD-6wI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ibV-mD-zpW"/>
+                    <constraint firstItem="zy8-8G-gFm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="jY8-OF-w5X"/>
+                    <constraint firstItem="w5u-Ti-DXH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="mtA-Dw-8Po"/>
+                    <constraint firstItem="hJj-Bb-bPf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="t1q-Rz-QT2"/>
+                    <constraint firstAttribute="bottom" secondItem="Atu-jD-6wI" secondAttribute="bottom" constant="4" id="v3h-ku-etN"/>
+                    <constraint firstItem="Atu-jD-6wI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="zcu-zb-dXi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mainImageView" destination="Atu-jD-6wI" id="hmU-KK-mly"/>
+                <outlet property="typeLabel" destination="hJj-Bb-bPf" id="div-6H-7nv"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="407"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="detail_top_ shadow_iamge.png" width="320" height="95"/>
+    </resources>
+</document>
